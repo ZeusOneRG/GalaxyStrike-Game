@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cd3whcr0ntqsg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3cfvr"]
+
+[sub_resource type="Animation" id="Animation_dkjbp"]
+resource_name = "character_idle"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_agfs1"]
+_data = {
+&"character_idle": SubResource("Animation_dkjbp")
+}
+
+[node name="Character" type="CharacterBody2D" unique_id=967383206]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=948277072]
+sprite_frames = SubResource("SpriteFrames_3cfvr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=755605071]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=419272728]
+libraries/ = SubResource("AnimationLibrary_agfs1")

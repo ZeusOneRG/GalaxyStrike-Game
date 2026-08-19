@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://kwv47ngy00ke"]
+
+[ext_resource type="Texture2D" uid="uid://pllo58fj5jg3" path="res://assets/menu/space_background.png" id="1_dwiwy"]
+
+[node name="Lvl01" type="Node2D" unique_id=1405529600]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1140804548]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=582637764]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dwiwy")
+expand_mode = 1
+stretch_mode = 6
